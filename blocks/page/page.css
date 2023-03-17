@@ -1,0 +1,17 @@
+.html {
+    scroll-behavior: smooth;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 100%;
+    background: linear-gradient(180deg, #010208 16.39%, #010206 20.51%, #040008 24.79%, #010101 30.46%, #010101 34.11%, #010101 36.21%, #010101 100%);
+    border-radius: 100px 100px 100px 0px;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+}
+
+.font-weight-lite {
+    font-weight: 300;
+    opacity: 55%;
+}

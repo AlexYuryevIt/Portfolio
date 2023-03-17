@@ -1,0 +1,9 @@
+@import url(../vendor/reset.css);
+@import url(../fonts/fonts.css);
+
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/works/works.css);
+@import url(../blocks/about/about.css);
+@import url(../blocks/footer/footer.css);
