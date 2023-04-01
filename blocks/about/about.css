@@ -1,62 +1,91 @@
 .about {
-    padding: 74px 203px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.about__wrapper {
-    margin: 0 auto;
-    gap: 34px;
-    padding: 33.5px 0;
-    max-width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.about__inner {
+  margin: 0 auto;
+  gap: 34px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
 }
 
 .about__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    width: 596px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
 
 .about__heading {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: left;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .about__text {
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 150%;
-    text-align: left;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 150%;
+  text-align: left;
 }
 
 .about__gallery {
-    display: grid;
-    gap: 32px;
-    grid-template-areas: 
+  display: grid;
+  gap: 32px;
+  grid-template-areas:
     "A A A B B B"
     "A A A B B B"
     "A A A C C C"
     "A A A C C C";
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.about__img-1 {
-    grid-area: A;
+.about__img {
+  width: 100%;
 }
 
-.about__img-2 {
-    grid-area: B;
+.about__img_img1 {
+  grid-area: A;
 }
 
-.about__img-3 {
-    grid-area: C;
-    border-radius: 16px;
+.about__img_img2 {
+  grid-area: B;
+}
+
+.about__img_img3 {
+  grid-area: C;
+  border-radius: 16px;
+}
+
+@media (max-width: 959px) {
+  .about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .about__gallery {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .about__heading {
+    font-size: 16px;
+  }
+  .about__text {
+    font-size: 12px;
+  }
+  .about__gallery {
+    gap: 10px;
+  }
 }

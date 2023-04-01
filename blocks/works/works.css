@@ -1,96 +1,148 @@
 .works {
-    padding: 80px 110px 120px;
+  padding: 80px 0 120px;
 }
 
 .works__heading {
-    margin-bottom: 97px;
-    font-size: 40px;
-    line-height: 150%;
-    font-weight: 600;
+  margin-bottom: 97px;
+  font-size: 40px;
+  line-height: 150%;
+  font-weight: 600;
 }
 
 .works__container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 97px;
-    width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 97px;
+  width: 100%;
+}
+
+.works__container_mobile {
+  display: none;
 }
 
 .works__item {
-    display: grid;
-    gap: 32px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
 }
 
 .works__img {
-    height: 490px;
-    max-width: 100%;
-    max-width: 734px;
-    border-radius: 16px;
-}
-
-.works__subheading {
-    margin: 183px 0 16px 0;
-    max-width: 594px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  width: 100%;
+  border-radius: 16px;
 }
 
 .works__description {
-    margin-bottom: 24px;
-    max-width: 594px;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.works__category {
-    margin-bottom: 32px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 150%;
-    opacity: 0.5;
+.works__title {
+  margin-bottom: 20px;
+  max-width: 594px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.works__subtitle {
+  margin-bottom: 20px;
+  max-width: 594px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 150%;
 }
 
 .works__link {
-    padding-left: 16px;
-    display: block;
-    position: relative;
-    width: 163px;
-    height: 40px;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
-    background-color: #000;
+  padding-left: 16px;
+  display: block;
+  position: relative;
+  width: 163px;
+  height: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
 
-    border: 1px solid rgba(227, 228, 230, 0.55);
-    border-radius: 100px;
-    transition: 1s ease-out;
+  border: 1px solid rgba(227, 228, 230, 0.55);
+  border-radius: 100px;
+  transition: 1s ease-out;
 }
 
 .works__link::after {
-    content: '';
-    position: absolute;
-    right: 10px;
-    top: 6px;
-    width: 24px;
-    height: 24px;
-    background-image: url(../../images/works-short-arrow.svg);
-    transition: 1s ease-out;
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/works-short-arrow.svg);
+  transition: 1s ease-out;
 }
 
 .works__link:hover {
-    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
-    width: 189px;
+  background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+  width: 189px;
 }
 
 .works__link:hover:after {
-    background-image: url(../../images/works-long-arrow.svg);
+  background-image: url(../../images/works-long-arrow.svg);
+}
+
+@media (max-width: 1199px) {
+  .works__container {
+    gap: 70px;
+  }
+  .works__subtitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 959px) {
+  .works__heading {
+    margin-bottom: 70px;
+  }
+  .works__title {
+    margin-bottom: 14px;
+  }
+  .works__subtitle {
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .works__container {
+    display: none;
+  }
+  .works__container_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .works__item {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .works__description {
+    align-items: center;
+  }
+
+  .works__heading {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+  .works__title {
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+
+  .works__subtitle {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
 }
