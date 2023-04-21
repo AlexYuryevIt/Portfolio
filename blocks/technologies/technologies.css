@@ -27,8 +27,6 @@
     padding: 0 0 60px;
   }
   .technologies__list {
-    padding-left: 40px;
-    padding-right: 40px;
     white-space: nowrap;
     display: block;
     overflow: hidden;
@@ -40,9 +38,9 @@
     scroll-behavior: auto;
   }
 
-  /* .technologies__list.dragging a {
+  .technologies__list.dragging a {
     pointer-events: none;
-  } */
+  }
 
   .technologies__item {
     display: inline-block;

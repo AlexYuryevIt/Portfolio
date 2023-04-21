@@ -4,7 +4,8 @@ firstItem = carousel.querySelectorAll("li")[0];
 
 let isDragStart = false,
   prevPageX,
-  prevScrollLeft;
+  prevScrollLeft,
+  positionDiff;
 
 const dragStart = (e) => {
   isDragStart = true;
@@ -16,13 +17,14 @@ const dragging = (e) => {
   if (!isDragStart) return;
   e.preventDefault();
   carousel.classList.add("dragging");
-  let positionDiff = (e.pageX || e.touched[0].pageX) - prevPageX;
+  positionDiff = (e.pageX || e.touched[0].pageX) - prevPageX;
   carousel.scrollLeft = prevScrollLeft - positionDiff;
 };
 
 const dragStop = () => {
   isDragStart = false;
   carousel.classList.remove("dragging");
+  autoSlide();
 };
 
 carousel.addEventListener("mousedown", dragStart);

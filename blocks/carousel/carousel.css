@@ -7,6 +7,9 @@
     position: relative;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .carousel__controls {
     position: absolute;
