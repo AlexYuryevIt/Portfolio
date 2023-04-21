@@ -1,0 +1,42 @@
+.carousel__controls {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  .carousel {
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  .carousel__controls {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .carousel-btn {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .carousel-btn img {
+    transition: all 0.3s ease-in-out;
+  }
+  .carousel-btn img:hover {
+    transform: scale(1.2);
+  }
+  .carousel-btn.prev {
+    transform: rotate(90deg);
+  }
+  .carousel-btn.next {
+    transform: rotate(-90deg);
+  }
+}
