@@ -1,4 +1,4 @@
-.carousel__controls {
+.carousel-btn {
   display: none;
 }
 
@@ -11,15 +11,8 @@
     justify-content: space-between;
     align-items: center;
   }
-  .carousel__controls {
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
   .carousel-btn {
+    display: block;
     padding: 0;
     width: 40px;
     height: 40px;
