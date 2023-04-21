@@ -54,7 +54,7 @@
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 689px) {
   .technologies__item {
     width: calc(100% / 3);
   }
