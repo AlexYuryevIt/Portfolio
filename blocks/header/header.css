@@ -42,7 +42,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.header__nav {
+.header__nav_desktop {
   display: flex;
   flex-direction: row;
   gap: 32px;
@@ -126,7 +126,7 @@
   .heading {
     font-size: 24px;
   }
-  .header__nav {
+  .header__nav_desktop {
     display: none;
   }
 }
