@@ -31,10 +31,12 @@
 
   .burger__btn_active {
     transform: rotate(-45deg);
+    z-index: 1000;
   }
 
   .burger__btn.burger__btn_active::after {
     transform: rotate(90deg) translate(-7px, 0px);
     width: 40px;
+    z-index: 1000;
   }
 }
