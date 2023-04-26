@@ -3,7 +3,7 @@
 }
 
 .works__container {
-  margin: 0 auto;
+  margin: 0 auto 60px;
   display: flex;
   flex-direction: column;
   gap: 97px;
@@ -88,6 +88,25 @@
   background-image: url(../../images/works-long-arrow.svg);
 }
 
+.work__source {
+  display: block;
+  font-size: 40px;
+  line-height: 150%;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.work__source:visited {
+  color: #fff;
+}
+
+.work__source:hover {
+  color: #c54b8c;
+}
+
 @media (max-width: 1199px) {
   .works__container {
     gap: 70px;
@@ -131,5 +150,9 @@
   .works__subtitle {
     margin-bottom: 12px;
     font-size: 12px;
+  }
+  .work__source {
+    margin-bottom: 50px;
+    font-size: 30px;
   }
 }
