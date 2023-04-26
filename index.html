@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <script src="./js/index.js"></script>
   </head>
+
   <body class="page">
     <header class="header">
       <div class="container">
@@ -31,6 +32,21 @@
                 <a href="#contacts" class="header__nav-link">Contacts</a>
               </li>
             </ul>
+            <button class="burger__btn"></button>
+            <div class="burger">
+              <nav class="burger__nav">
+                <a href="#works" class="header__nav-link burger__link">Works</a>
+                <a href="#technologies" class="header__nav-link burger__link"
+                  >Technologies</a
+                >
+                <a href="#about_me" class="header__nav-link burger__link"
+                  >About Me</a
+                >
+                <a href="#contacts" class="header__nav-link burger__link"
+                  >Contacts</a
+                >
+              </nav>
+            </div>
           </div>
           <h1 class="heading">
             <span class="font-weight-lite">Hello! I'm Alex</span><br />FrontEnd
@@ -378,5 +394,6 @@
     </footer>
 
     <script src="./js/carousel.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>

@@ -24,3 +24,7 @@
   font-weight: 300;
   opacity: 55%;
 }
+
+.page_lock {
+  overflow: hidden;
+}
